@@ -56,7 +56,7 @@ A modern, full-stack dashboard that delivers personalized news, movies, and soci
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Riyak05/personalized-content-dashboard.git
 cd personalized-content-dashboard
 ```
 
