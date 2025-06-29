@@ -1,0 +1,17 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111827;
+}
+
+.dark {
+  --color-bg: #111827;
+  --color-text: #ffffff;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
