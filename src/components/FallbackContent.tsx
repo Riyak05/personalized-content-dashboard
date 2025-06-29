@@ -109,24 +109,24 @@ export default function FallbackContent({ type, error }: FallbackContentProps) {
           >
             {type === "news" && (
               <>
-                <div className="font-bold text-lg">{item.title}</div>
+                <div className="font-bold text-lg">{(item as typeof fallbackData.news[0]).title}</div>
                 <div className="text-sm text-gray-500 mt-2">
-                  {item.description}
+                  {(item as typeof fallbackData.news[0]).description}
                 </div>
                 <div className="text-xs text-gray-400 mt-2">
-                  Source: {item.source.name}
+                  Source: {(item as typeof fallbackData.news[0]).source.name}
                 </div>
               </>
             )}
 
             {type === "movies" && (
               <>
-                <div className="font-bold text-lg">{item.title}</div>
+                <div className="font-bold text-lg">{(item as typeof fallbackData.movies[0]).title}</div>
                 <div className="text-sm text-gray-500 mt-2">
-                  {item.overview}
+                  {(item as typeof fallbackData.movies[0]).overview}
                 </div>
                 <div className="text-xs text-gray-400 mt-2">
-                  Release: {item.release_date}
+                  Release: {(item as typeof fallbackData.movies[0]).release_date}
                 </div>
               </>
             )}
@@ -135,9 +135,9 @@ export default function FallbackContent({ type, error }: FallbackContentProps) {
               <>
                 <div className="flex items-center gap-2 mb-2">
                   <div className="w-8 h-8 bg-gray-300 dark:bg-gray-600 rounded-full"></div>
-                  <span className="font-semibold">@{item.username}</span>
+                  <span className="font-semibold">@{(item as typeof fallbackData.social[0]).username}</span>
                 </div>
-                <div className="text-sm">{item.content}</div>
+                <div className="text-sm">{(item as typeof fallbackData.social[0]).content}</div>
               </>
             )}
           </motion.div>
