@@ -1,5 +1,8 @@
 # Personalized Content Dashboard
 
+![gif](https://github.com/user-attachments/assets/2e208920-c78b-4fb5-9c6b-654a8ece38d8)
+
+
 A modern, full-stack dashboard that delivers personalized news, movies, and social content feeds. Built with Next.js, TypeScript, Redux Toolkit, and Tailwind CSS, it features authentication, user preferences, dark mode, and robust error handling.
 
 ---
